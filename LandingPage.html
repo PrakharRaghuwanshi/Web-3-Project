@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedBook - Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #006400; /* Dark green header background color */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 10px;
+            /* You can use an image URL for the profile icon background-image */
+        }
+
+        .logo {
+            width: 100px;
+            /* You can use an image URL for the logo background-image */
+        }
+
+        .welcome-message {
+            text-align: center;
+            background-color: #c8e6c9; /* Light green background color */
+            color: #333;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center items horizontally */
+            align-items: center;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            flex: 0 0 calc(33.33% - 20px); /* Adjust as needed for the number of boxes */
+            height: 150px; /* Adjust the height as needed */
+            background-color: #c8e6c9; /* Light green background color for each box */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Add more styles for the content of your medical records website here */
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile-icon"></div>
+        <div class="logo"></div>
+    </div>
+    <div class="welcome-message">
+        Welcome To MedBook
+    </div>
+    <script type="text/javascript">
+        function medicalHistory(){
+            window.location.href="./MedicalHistory.html";
+        }
+    </script>
+    <div class="menu">
+        <div class="menu-item">
+            <div>Medical History</div>
+            <select>
+                <option>View</option>
+                <option>Update</option>                
+            </select>
+            <button type="button" onclick="medicalHistory()">Go</button>
+        </div>
+        <div class="menu-item">
+            <div>Patient Quotient</div>
+        </div>
+        <div class="menu-item">
+            <div>Health Facilities</div>
+            <select>
+                <option>Test Labs</option>
+                <option>Health Insurance and Policies</option>
+            </select>
+        </div>
+        <div class="menu-item">
+            <div>Notifications and Reminders</div>
+        </div>
+        <div class="menu-item">
+            <div>Order Medicines</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v870-mynt-20_1_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=34b4a3b495378392a9320de3f3eb09ce');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .otp-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .otp-box h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .otp-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .otp-input-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .otp-input {
+            width: 20%;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .verify-button {
+            background-color: #c8e6c9; /* Light green color */
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-box">
+        <h1>Verify OTP</h1>
+        <p class="otp-label">Enter the OTP:</p>
+        <div class="otp-input-container">
+            <input class="otp-input" type="text" maxlength="1">
+            <input class="otp-input" type="text" maxlength="1">
+            <input class="otp-input" type="text" maxlength="1">
+            <input class="otp-input" type="text" maxlength="1">
+        </div>
+        <button class="verify-button">Verify OTP</button>
+    </div>
+</body>
+</html>
